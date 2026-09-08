@@ -2,6 +2,7 @@
    give these a glossy, dimensional look instead of flat line icons. */
 
 import type { ComponentType } from "react";
+import type { LucideProps } from "lucide-react";
 
 function Defs({ id, colors }: { id: string; colors: [string, string, string] }) {
   return (
@@ -190,7 +191,7 @@ export function Icon3DBadge({
   rounded = "rounded-2xl",
   className,
 }: {
-  icon: ComponentType<{ size?: number; className?: string; strokeWidth?: number }>;
+  icon: ComponentType<LucideProps>;
   size?: number;
   iconSize?: number;
   colors?: [string, string, string];
